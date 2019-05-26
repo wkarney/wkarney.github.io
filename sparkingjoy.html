@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Will Karnasiewicz, CFA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Will Karnasiewicz's personal website. data scientist | financial analyst | homebrewer">
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/GA_04.18-avatar-compressed.jpg" alt="" /></a>
+					<h1><strong>Will Karnasiewicz</strong> <h1>
+					<h1> Data scientist <br />
+						CFA charterholder <br />
+						Amateur homebrewer <br /> </h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+				<section id="one">
+						<header class="major">
+							<h2> <b>Sparking Joy with Natural Language Processing</b></h2>
+							<h4> <i>Exploring Natural Language Processing with Marie Kondo and Reddit</i></h4>
+							<p>
+								April 2019 
+								<br>
+								Check it out on GitHub: 
+								<a href="https://github.com/wkarney/sparking-joy-NLP" class="icons icon fa-github" target="_blank"></a>
+								<br>
+								<u>Skills Utilized</u>: Python | Web APIs | NLP | Machine Learning | Binary Classification | Regex | Flask 
+							</p>
+						<h3> <a href="http://sparkingjoy-nlp.herokuapp.com">Does it spark Joy? Try out the web app!</a></h3>
+						<h4></h4>
+						<p>Determine if an excerpt of text "sparks joy" or not! <br>(According to Logistic Regression, Naïve Bayes, and Voting Classifier classification models.)</p>
+
+					<hr />
+
+				<!-- Two -->
+				</section id="two">
+
+					<h2>Problem Statements:</h2>
+					<h3></h3>
+						<ul>
+							<li>Based on text data from posts, can the model correctly classify posts from <a href="www.reddit.com/r/konmari">r/konmari?</a> vs. <a href="www.reddit.com/r/hoarding">r/hoarding?</a></li>
+							<li>What words are most important in identifying <a href="www.reddit.com/r/konmari">r/konmari?</a> posts?</li>
+							<li>Are there certain posts with which the model has trouble? Why?</li>
+							<li>Can the model be generalized outside Reddit?</li>
+						</ul>
+					<hr/>
+                </section>	
+                
+				<!-- Three -->
+				</section id="three">
+
+					<h2>Executive Summary:</h2>
+					The project primarily utilizes two classification models:
+						<ul>
+							<li>Naïve Bayes (Multinomial)</li>
+							<li>Logistic Regression</li>
+						</ul>
+						Each model has been performed alongside use of a TF-IDF vectorizer.
+						<br><br>
+						Additionally, a voting classifier model was run to see if, though more conceptually and computationally complicated, produced better results.
+						<br><br>
+						The NLP models herein have proven successful at accurately predicting whether a post or not a post from the r/konmari subreddit, though some overfitting is present.</p>
+					<hr/>		
+                </section>
+                
+                <!-- Four -->
+				</section id="four">
+                    <h2>Data Gathering:</h2>
+                        I pulled Reddit posts using either the Reddit API (<a href="https://praw.readthedocs.io/en/latest/">via the Python Reddit API Wrapper</a>) or the <a href="https://pushshift.io">Pushshift API</a>.
+                        <br><br>
+                        The initial dataset included 4,936 reddit posts with approximately 53% being from <a href="www.reddit.com/r/konmari">r/konmari</a>.
+                    <hr/>		
+                </section>
+
+                <!-- Five -->
+                </section id="five">
+                    <h2>Conclusions:</h2>
+                        The NLP models that sought to classify r/hoarding and r/konmari, all showed strong results with testing scores (r-squared) of 0.95 or higher.
+                        <br><br>
+                        Once other similarly 'tidy' subreddits were introduced, accuracy scores dropped and overfitting increased, as the new posts were much more similar to the positive target than the existing observations of the negative target class.
+                        <br><br>
+                        Stemming and lemmatization was performed and although not dramatically different than the base models, a stemmed corpus might be performed due to a slight reduction in variance.
+                        <br><br>
+                        A further analysis was performed by taking transcripts of the Marie Kondo's Netflix show (scraped from <a href="https://www.springfieldspringfield.co.uk">https://www.springfieldspringfield.co.uk</a>) and feeding each episode into an existing base NLP model. Interestingly, each episode of the show had differing 'levels of Konmari-ness' and each were correctly identified as being a part of the 'konmari' class.
+                    <hr/>		
+                </section>
+
+                <!-- Six -->
+                </section id="six">
+                    <h2>Further Improvements:</h2>
+                    In order to cut down on the variance, I would like to gather additional data to feed into the model. Additionally, given the interesting results with the Netflix transcripts, I'd like to test the improved model on additional non-reddit data for a more generalized model of 'Konmari-ness'.	
+                </section>
+
+				<!-- Seven -->
+					<section id="seven">
+						<h2>Get In Touch</h2>
+						<p>Have a job offer? Want to meet up for coffee? A round of golf? Beer swap? </p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="https://formspree.io/contact@willkarnasiewicz.com"">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+									<br>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										Washington, DC <br />
+										Brooklyn, NY
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										203-632-9455
+									</li>
+									<li>
+										<h3 class="icon fa-file-pdf-o"><span class="label"></span></h3>
+										<a href="./assets/resume/Will_Karnasiewicz_CFA_resume.pdf">Download my resume</a>
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="mailto:willkarnasiewicz@gmail.com">willkarnasiewicz@gmail.com</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a target="_blank" href="https://twitter.com/wmkarney" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a target="_blank" href="https://github.com/wkarney" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/wkarnasiewicz/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a target="_blank" href="https://angel.co/will-karnasiewicz" class="icon fa-angellist"><span class="label">Linkedin</span></a></li>
+						<li><a target="_blank" href="mailto:willkarnasiewicz@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li><a target="_blank"href="./assets/resume/Will_Karnasiewicz_CFA_resume.pdf">Download my resume</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2019 Will Karnasiewicz </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
