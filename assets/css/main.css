@@ -2620,7 +2620,9 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 20em;
+			height: auto;
+			width: auto;
+			max-width: 20em;
 		}
 
 /* Footer */
