@@ -4,7 +4,7 @@
 #### Front-end template info:
 Thanks to [@ajlkn](https://twitter.com/ajlkn) to providing the free Strata template via html5up.net.
  
-Free for personal and commercial use under the CCA 3.0 [license](https://html5up.net/license)
+Free for personal and commercial use under the CCA 3.0 [license](https://html5up.net/license).
 
 Uses: 
 * formspree.io for contact form
